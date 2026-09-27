@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Amazon Testing">
+   
+   <test name = "Account Validation chrome">
+      <classes>
+      	 <class name = "com.test.GoogleTest"/>
+         <class name = "com.test.firstSeleniumSession"/>
+         <class name = "com.test.practice"/>
+         
+      </classes>
+  
+   </test>
+</suite>
