@@ -17,8 +17,8 @@ public class FindElementsConcept {
 		
 		driver.manage().window().maximize(); //to maximize window
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS); // when some sites take longer to load
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS ) ;
+		//driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS); // when some sites take longer to load
+		//driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS ) ;
 		driver.get("http://facebook.com");
 		
 		// 1.get the total count of links on page

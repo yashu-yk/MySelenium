@@ -16,8 +16,8 @@ public class Navigations {
 		driver.manage().deleteAllCookies();
 		
 		//dyanamic wait
-		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS); // when some sites take longer to load
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS ) ;
+		//driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS); // when some sites take longer to load
+		//driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS ) ;
 		
 		
 		driver.get("http://google.com"); //launches url

@@ -16,8 +16,8 @@ public class BootstrapDropdown {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize(); //to maximize window
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS); // when some sites take longer to load
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS ) ;
+		//driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS); // when some sites take longer to load
+		//driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS ) ;
 	     driver.get("https://www.jquery-az.com/4-demos-bootstrap-labels-forms-floating/");
 	     Actions action=new Actions(driver);
 	     action.moveToElement(driver.findElement(By.linkText("Programming"))).build().perform();
