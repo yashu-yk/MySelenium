@@ -104,7 +104,12 @@ public class webTable {
 				action.moveToElement(element).perform();
 				Thread.sleep(3000);
 				driver.findElement(By.xpath("//a[text()=\"Mobiles\"]")).click();
-				Thread.sleep(3000);
+				
+				
+				 WebElement ele = driver.findElement(By.xpath("//button[text()=\"Copy Text\"]"));
+				 Actions a = new Actions(driver);
+				 a.moveToElement(ele).doubleClick().perform();
+				 Thread.sleep(3000);
 				}
 			
 			
