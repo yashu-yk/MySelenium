@@ -20,7 +20,7 @@ public class vowelsQ1 {
             }
         }
 
-        System.out.println("Frequecny of alphabets");
+        System.out.println("Frequecny of alphabets-");
         for(Map.Entry<Character, Integer> entry : map.entrySet()){
             System.out.println(entry.getKey() +" : "+ entry.getValue());
         }
@@ -38,11 +38,32 @@ public class vowelsQ1 {
             }
         }
 
-        System.out.println("Printing Duplicates");
+        System.out.println("Printing Duplicates-");
         for(Map.Entry<Character, Integer> entry: map.entrySet()){
             if(entry.getValue()>1){
                 System.out.println(entry.getKey());
             }
+        }
+        
+        System.out.println("Printing first repetitive Occurance-");
+        for(Map.Entry<Character, Integer> entry : map.entrySet()) {
+        	if(entry.getValue()>=2){
+                System.out.println(entry.getKey());
+                break;
+            }
+        }
+        
+        System.out.println("Printing first Non-repetitive Occurance-");
+        for(Map.Entry<Character, Integer> entry : map.entrySet()) {
+        	if(entry.getValue()==1){
+                System.out.println(entry.getKey());
+                break;
+            }
+        }
+        
+        System.out.println("Removing duplicate characters while preserving insertion order-");
+        for(Map.Entry<Character,Integer> entry: map.entrySet()) {
+        	 System.out.println(entry.getKey());
         }
     }
 }
